@@ -14,11 +14,11 @@ type Presentation struct {
 }
 
 type Metadata struct {
-	Title      string   `yaml:"title"`
-	Author     string   `yaml:"author"`
-	Date       string   `yaml:"date"`
-	extensions []string `yaml:"extensions"`
-	styles     []string `yaml:"styles"`
+	Title  string `yaml:"title"`
+	Author string `yaml:"author"`
+	Date   string `yaml:"date"`
+	// extensions []string `yaml:"extensions"`
+	// styles     []string `yaml:"styles"`
 }
 
 type Slide struct {
