@@ -21,7 +21,6 @@ type model struct {
 }
 
 func initialModel(filename string) *model {
-
 	file, err := os.Open(filename)
 	if err != nil {
 		panic("Error opening file")
@@ -160,5 +159,4 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Error starting program: %v", err)
 		os.Exit(1)
 	}
-
 }

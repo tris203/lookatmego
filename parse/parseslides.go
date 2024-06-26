@@ -31,9 +31,8 @@ func (p *Presentation) AddSlide(content string) {
 }
 
 func LoadFromFile(content []byte) (*Presentation, error) {
-	var p = new(Presentation)
+	p := new(Presentation)
 	slides, metadata, err := parseSlides(content)
-
 	if err != nil {
 		return nil, err
 	}
