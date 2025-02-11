@@ -59,6 +59,7 @@ func (m *model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		case "h", "j", "down", "left", "enter":
 			err := m.Next()
 			if err != nil {
+				fmt.Print("\033[H\033[2J") // Clear the screen
 				return m, tea.Quit
 			}
 			return m, cmd
