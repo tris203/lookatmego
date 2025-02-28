@@ -3,7 +3,7 @@ module github.com/tris203/lookatmego
 go 1.22.4
 
 require (
-	github.com/charmbracelet/bubbletea v1.3.3
+	github.com/charmbracelet/bubbletea v1.3.4
 	github.com/charmbracelet/glamour v0.8.0
 	github.com/charmbracelet/lipgloss v1.0.0
 	gopkg.in/yaml.v3 v3.0.1
